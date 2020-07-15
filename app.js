@@ -49,7 +49,6 @@ async function searchPhotos(query) {
 function updateInput(e) {
   searchValue = e.target.value;
 }
-curatedPhotos();
 function clear() {
   gallery.innerHTML = "";
   searchInput.value = "";
@@ -73,3 +72,5 @@ form.addEventListener("submit", (e) => {
   searchPhotos(searchValue);
 });
 more.addEventListener("click", loadMore);
+
+curatedPhotos();
